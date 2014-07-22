@@ -20,7 +20,7 @@
 <xsl:template match="/">
    <html>
       <head>
-        <link href="css/diff.css" type="text/css" rel="stylesheet"/>
+        <link href="daisydiff/css/diff.css" type="text/css" rel="stylesheet"/>
         <xsl:apply-templates select="diffreport/css/node()"/>
       </head>
       <body>

@@ -21,13 +21,13 @@
    <html>
       <head>
         <xsl:apply-templates select="diffreport/css/node()"/>
-        <link href="css/diff.css" type="text/css" rel="stylesheet"/>
+        <link href="daisydiff/css/diff.css" type="text/css" rel="stylesheet"/>
       </head>
       <body>
-      <script src="js/tooltip/wz_tooltip.js" type="text/javascript"></script>
-      <script src="js/tooltip/tip_balloon.js" type="text/javascript"></script>
-      <script src="js/dojo/dojo.js" type="text/javascript"></script>
-      <script src="js/diff.js" type="text/javascript"></script>
+      <script src="daisydiff/js/tooltip/wz_tooltip.js" type="text/javascript"></script>
+      <script src="daisydiff/js/tooltip/tip_balloon.js" type="text/javascript"></script>
+      <script src="daisydiff/js/dojo/dojo.js" type="text/javascript"></script>
+      <script src="daisydiff/js/diff.js" type="text/javascript"></script>
       <script>
         htmlDiffInit();
       </script>
@@ -48,7 +48,7 @@
                 <xsl:value-of select="$spans[1]/@id"/>
               </xsl:attribute>
               <img class="diff-icon"
-                src="images/diff-first.gif"
+                src="daisydiff/images/diff-first.gif"
                 title="Go to first change."/>
             </a>
             <a>
@@ -89,7 +89,7 @@
                 <xsl:value-of select="$spans[last()]/@id"/>
               </xsl:attribute>
               <img class="diff-icon"
-                src="images/diff-last.gif"
+                src="daisydiff/images/diff-last.gif"
                 title="Go to last change."/>
             </a>
          </td></tr></table>
